@@ -1,0 +1,97 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3a1a1a; /* Dark maroon for a festive and cozy feel */
+    color: #f7f3e9; /* Light beige text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #800000; /* Maroon for a warm, festive touch */
+    color: #f7f3e9; /* Light beige for contrast */
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #4b2c2c; /* Slightly lighter maroon for the background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex; /* Align items side-by-side */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Add space between item name and button */
+    margin-bottom: 15px; /* Space between list items */
+    padding: 10px;
+    background: #5c3333; /* Darker background for list items */
+    border: 1px solid #d3b1b1; /* Light maroon border for separation */
+    border-radius: 5px;
+}
+
+ul li a {
+    margin-left: 20px; /* Space between the item name and cart button */
+}
+
+/* Button Styling */
+button {
+    transition: transform 0.2s ease; /* Add a smooth hover effect */
+    background-color: #800000; /* Maroon button background */
+    color: #f7f3e9; /* Light text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+    background-color: #b22222; /* Lighter red on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #800000; /* Maroon footer background */
+    color: #f7f3e9; /* Light beige text */
+}
+
+/* Snowflake Styling */
+.snowflake {
+    position: fixed;
+    top: -50px;
+    font-size: 2rem;
+    animation-name: snow;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes snow {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Festive Mode */
+body.festive {
+    background-color: #4d1a1a; /* Darker maroon for festive mode */
+    color: #f7f3e9; /* Light text for contrast */
+}
